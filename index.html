@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InstaWeather</title>
     <script defer src="ui.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.svg">
   </head>
-  <body></body>
+  <body>
+    <div id="main">
+      <div id="location-search-container">
+        <input type="text"id="search" placeholder="City or US Zip Code">
+        <button id="search-button">Search</button>
+
+        <div id="location-background"></div>
+      </div>
+      <div id="weather-info-container">
+        <div id="location-container">
+          <h1 id="location-name">Location, There</h1>
+          <h3 id="conditions"></h3>
+        </div>
+        <h2 id="temp">69 °C</h3>
+        <div id="secondary-container">
+          <h3 id="feelslike">FEELS LIKE: 42 °C</h3>
+          <h3 id="humidity">HUMIDITY: 420%</h3>
+          <h3 id="wind-speed">WIND: 20 KpH</h3>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
